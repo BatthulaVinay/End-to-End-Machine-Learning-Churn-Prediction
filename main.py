@@ -1,5 +1,6 @@
 import __main__
 import sys
+from typing import Literal
 import pandas as pd
 from fastapi import FastAPI
 from pydantic import BaseModel
@@ -37,8 +38,8 @@ class ChurnRequest(BaseModel):
     total_eve_calls: int
     total_night_calls: int
     total_intl_calls: int
-    international_plan: str
-    voice_mail_plan: str
+    international_plan: Literal["yes", "no"]
+    voice_mail_plan: Literal["yes", "no"]
     area_code: int
 
 
