@@ -137,9 +137,3 @@ Through this project, I practiced:
 - Business problem solving
 
 ---
-
-## Author
-
-Vinay Batthula
-
-GitHub: https://github.com/BatthulaVinay
