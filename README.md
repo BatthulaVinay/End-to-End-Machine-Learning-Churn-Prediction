@@ -136,10 +136,3 @@ Through this project, I practiced:
 - Model evaluation
 - Business problem solving
 
----
-
-## Author
-
-Vinay Batthula
-
-GitHub: https://github.com/BatthulaVinay
