@@ -34,11 +34,7 @@ E --> E3[Decision Tree]
 E --> E4[Random Forest]
 E --> E5[XGBoost]
 
-E1 --> F[Evaluation]
-E2 --> F
-E3 --> F
-E4 --> F
-E5 --> F
+
 
 F --> G[Model Comparison]
 
