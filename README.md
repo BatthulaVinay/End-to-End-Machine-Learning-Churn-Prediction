@@ -15,7 +15,6 @@ Goal:
 Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
 
 
-````
 ```mermaid
 flowchart TD
 
@@ -26,6 +25,7 @@ C --> C1[Missing Values]
 C --> C2[Encoding]
 C --> C3[Scaling]
 
+C --> D[Train/Test Split]
 D --> E[Model Training]
 
 E --> E1[Logistic Regression]
