@@ -287,5 +287,25 @@ python app.py
 # Build and launch the containerized application
 docker-compose up --build
 ```
+
+##  Future Improvements
+* **Automated CI/CD:** Implement GitHub Actions to automate testing and deployment pipelines to Hugging Face or AWS.
+* **Feature Engineering:** Integrate external data sources, such as customer support interaction logs, to improve churn prediction accuracy.
+* **Enhanced UI/UX:** Add a dashboard to the Streamlit app to visualize feature importance and provide explainability (e.g., using SHAP values).
+* **Scalability:** Transition from local model inference to an API-based architecture to support batch processing of large customer datasets.
+
+##  Troubleshooting
+If you encounter issues during local setup or deployment, please check the following:
+
+* **ModuleNotFoundError:** Ensure your virtual environment is active and all dependencies are installed:
+  ```bash
+  pip install -r requirements.txt
+  ```
+  * **Docker Issues:** Verify that Docker Desktop is running. If you face build errors, try clearing the cache:
+  ```bash
+  docker-compose build --no-cache
+  ```
+Environment Variables: Ensure any necessary .env files are configured if you are extending the app to connect to external databases or cloud storage.
+  
 ## License
 This project is licensed under the terms of the LICENSE file included in this repository.
