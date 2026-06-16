@@ -4,7 +4,7 @@
 
 | Churn Prediction | No Churn Prediction |
 | :---: | :---: |
-| ![Churn](images/churn.png) | ![No Churn](images/images/No_churn.png) |
+| ![Churn](images/churn.png) | ![No Churn](images/No_churn.png) |
 
 Built an end-to-end machine learning pipeline to predict customer churn and compare multiple classification approaches on an imbalanced dataset.
 
