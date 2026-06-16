@@ -1,5 +1,13 @@
 # Customer Churn Prediction System
-
+---
+title: Customer Churn Prediction
+emoji: 📞
+colorFrom: blue
+colorTo: indigo
+sdk: docker
+app_file: app.py
+pinned: false
+---
 Built an end-to-end machine learning pipeline to predict customer churn and compare multiple classification approaches on an imbalanced dataset.
 
 The project focuses on:
