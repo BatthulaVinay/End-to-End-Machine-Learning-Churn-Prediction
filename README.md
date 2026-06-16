@@ -191,6 +191,49 @@ Business impact is better reflected through precision-recall metrics.
 **Selected Model:** XGBoost  
 **Selection Criterion:** Highest F1 Score and ROC-AUC with a strong balance between precision and recall.
 
+## 📁 Project Structure
+
+```text
+├── artifacts/                  # Operational Data & Model Artifact Checkpoints
+│   ├── raw.csv                 # Original source data loaded by the ingestion component
+│   ├── train.csv               # Data split optimized for feeding the model algorithms
+│   ├── test.csv                # Data split reserved for model evaluation and metrics
+│   ├── preprocessor.pkl        # Serialized pipeline handling encoding and standard scaling
+│   └── model.pkl               # Frozen, high-performance champion XGBoost model weights
+│
+├── notebook/                   # Research & Exploratory Analysis Environment
+│   ├── data/
+│   │   └── Telecom_churn.csv   # Absolute raw starting data matrix
+│   ├── EDA.ipynb               # Analysis mapping data imbalances and key features
+│   └── model training.ipynb    # Algorithm benchmarking arena (XGBoost, RF, LR, SMOTE)
+│
+├── src/                        # Modular Production Execution Package
+│   ├── components/             # Core Functional Execution Modules
+│   │   ├── __init__.py         # Defines folder as an importable sub-package
+│   │   ├── data_ingestion.py   # Pulls raw datasets and manages train/test matrix splits
+│   │   ├── data_transformation.py # Constructs engineering pipelines and object serializations
+│   │   └── model_trainer.py    # Tunes parameters, selects champion model, maps metrics
+│   │
+│   ├── pipeline/               # Workflow Processing Pipelines
+│   │   ├── __init__.py         # Defines folder as an importable sub-package
+│   │   ├── train_pipeline.py   # Step controller sequencing: Ingest -> Transform -> Train
+│   │   └── predict_pipeline.py # Production connector feeding incoming values to frozen artifacts
+│   │
+│   ├── __init__.py             # Transforms src into an entry-point python package
+│   ├── exception.py            # Global custom handler tracking code line errors and crashes
+│   ├── logger.py               # Generates timestamped diagnostic logs for system tracking
+│   └── utils.py                # Houses central binary loading and saving object helper logic
+│
+├── .dockerignore               # Blocks bulky development assets from cluttering Docker images
+├── .gitignore                  # Prevents system junk, cached data, and virtual envs from pushing to git
+├── Dockerfile                  # Sequential system build commands to bundle your application
+├── Docker-compose.yml          # Port orchestration interface defining running network containers
+├── LICENSE                     # MIT Open Source usage policy distribution permissions
+├── app.py                      # Production web server interface serving predictive API routing
+├── main.py                     # Root command execution entry point to trigger system runs
+├── requirements.txt            # Document tracking specific third-party library installations
+└── setup.py                    # Metadata build module compiling your source package
+
 
 
 
