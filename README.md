@@ -71,17 +71,7 @@ The objective was to maximize churn detection performance while maintaining a ba
 | Random Forest | 0.617 | 0.814 | 0.892 | 0.702 |
 | XGBoost | **0.752** | 0.784 | **0.901** | **0.768** |
 
-### Key Findings
 
-- Logistic Regression achieved the highest recall (**0.928**) but suffered from very low precision (**0.237**), resulting in many false positives.
-- Applying SMOTE slightly improved precision and F1 score but did not significantly improve overall performance.
-- Decision Tree provided a more balanced trade-off between precision and recall but had lower ROC-AUC.
-- Random Forest substantially improved overall classification performance, achieving a strong ROC-AUC (**0.892**) and F1 score (**0.702**).
-- XGBoost delivered the best overall results, achieving:
-  - Highest Precision (**0.752**)
-  - Highest ROC-AUC (**0.901**)
-  - Highest F1 Score (**0.768**)
-  - Strong Recall (**0.784**)
 ## Experimental Findings
 
 ### 1. Logistic Regression
