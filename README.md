@@ -159,15 +159,6 @@ Performance:
 - ROC-AUC: 90.1%
 - F1 Score: 76.8%
 
-Confusion Matrix:
-
-True Negatives: 545
-False Positives: 25
-
-False Negatives: 21
-True Positives: 76
-
-
 ## Evaluation Methodology
 
 Metrics Used:
