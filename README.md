@@ -257,3 +257,28 @@ Make sure you have **Docker** and **Python 3.8+** installed on your machine.
 ```bash
 git clone [https://github.com/BatthulaVinay/End-to-End-Machine-Learning-Churn-Prediction.git](https://github.com/BatthulaVinay/End-to-End-Machine-Learning-Churn-Prediction.git)
 cd End-to-End-Machine-Learning-Churn-Prediction
+
+```
+### 2. Run Locally (Standard Python Setup)
+```bash
+# Create and activate virtual environment
+python -m venv venv
+source venv/bin/activate  # On Windows use: venv\Scripts\activate
+
+# Install dependencies and local source package
+pip install -r requirements.txt
+pip install -e .
+
+# Trigger the End-to-End training pipeline to generate artifacts
+python main.py
+
+# Start the interactive web application
+python app.py
+```
+
+### 3. Run via Container (Docker Setup)
+```bash
+# Build and launch the containerized application
+docker-compose up --build
+```
+
