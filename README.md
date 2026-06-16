@@ -44,7 +44,7 @@ F --> G[Model Comparison]
 
 G --> H[Best Model Selection<br/>XGBoost]
 
-````
+```
 ## Dataset
 
 Telecom customer churn dataset.
@@ -58,21 +58,44 @@ Challenges:
 - Mixed numerical and categorical features
 - Business cost of false negatives
 
-````
-## Experiments (MOST IMPORTANT)
+```
+## Experiments
 
-> **Note:** These are the actual empirical results obtained during the model evaluation phase.
+The objective was to maximize churn detection performance while maintaining a balance between precision and recall.
 
-| Model | Precision | Recall | ROC-AUC | F1-Score |
-| :--- | :---: | :---: | :---: | :---: |
-| **Logistic Regression** | 0.237 | **0.928** | 0.816 | 0.378 |
-| **Logistic Regression + SMOTE** | 0.250 | 0.907 | 0.811 | 0.392 |
-| **Decision Tree** | 0.611 | 0.680 | 0.767 | 0.644 |
-| **Random Forest** | 0.617 | 0.814 | 0.892 | 0.702 |
-| **XGBoost (Best Model)** | **0.752** | 0.784 | **0.901** | **0.768** |
+### Model Performance Comparison
 
-### 📈 Key Insights from Results
+| Model | Precision | Recall | ROC-AUC | F1 Score |
+|---------|---------:|---------:|---------:|---------:|
+| Logistic Regression | 0.237 | 0.928 | 0.816 | 0.378 |
+| Logistic Regression + SMOTE | 0.250 | 0.907 | 0.811 | 0.392 |
+| Decision Tree | 0.611 | 0.680 | 0.767 | 0.644 |
+| Random Forest | 0.617 | 0.814 | 0.892 | 0.702 |
+| XGBoost | **0.752** | 0.784 | **0.901** | **0.768** |
 
-1. **Why XGBoost Wins:** It achieves the highest **F1-Score (0.768)** and **ROC-AUC (0.901)**, proving it is the most robust model for balancing false positives and false negatives.
-2. **The Precision-Recall Trade-off:** While *Logistic Regression* captures the most churners (Recall: 0.928), its abysmal Precision (0.237) means it suffers from a massive rate of false alarms. 
-3. **Tree-Based Dominance:** Ensemble methods (Random Forest and XGBoost) significantly outperform linear baselines on this dataset.
+### Key Findings
+
+- Logistic Regression achieved the highest recall (**0.928**) but suffered from very low precision (**0.237**), resulting in many false positives.
+- Applying SMOTE slightly improved precision and F1 score but did not significantly improve overall performance.
+- Decision Tree provided a more balanced trade-off between precision and recall but had lower ROC-AUC.
+- Random Forest substantially improved overall classification performance, achieving a strong ROC-AUC (**0.892**) and F1 score (**0.702**).
+- XGBoost delivered the best overall results, achieving:
+  - Highest Precision (**0.752**)
+  - Highest ROC-AUC (**0.901**)
+  - Highest F1 Score (**0.768**)
+  - Strong Recall (**0.784**)
+
+### Best Model
+
+**XGBoost** was selected as the final model because it provided the best balance between identifying churned customers and minimizing false positives.
+
+| Metric | Score |
+|----------|---------:|
+| Precision | 0.752 |
+| Recall | 0.784 |
+| ROC-AUC | 0.901 |
+| F1 Score | 0.768 |
+
+### Conclusion
+
+The experiments demonstrate the importance of evaluating multiple models rather than relying solely on recall. While Logistic Regression captured most churn cases, XGBoost achieved the strongest overall performance and generalization capability, making it the preferred model for deployment.
