@@ -234,3 +234,26 @@ Business impact is better reflected through precision-recall metrics.
 ├── requirements.txt            # Document tracking specific third-party library installations
 └── setup.py                    # Metadata build module compiling your source package
 
+```
+
+## 🛠️ Tech Stack
+
+| Layer | Technology |
+| :--- | :--- |
+| **Model Engine** | XGBoost, Random Forest, Scikit-Learn |
+| **Imbalance Handling** | SMOTE (Imbalanced-Learn) |
+| **Core Utilities** | Custom Logging & Production Exception Handlers |
+| **Web App Framework**| Flask / Streamlit |
+| **Containerization** | Docker, Docker-Compose |
+
+---
+
+## 🚀 Run Locally
+
+### 📋 Prerequisites
+Make sure you have **Docker** and **Python 3.8+** installed on your machine.
+
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/BatthulaVinay/End-to-End-Machine-Learning-Churn-Prediction.git](https://github.com/BatthulaVinay/End-to-End-Machine-Learning-Churn-Prediction.git)
+cd End-to-End-Machine-Learning-Churn-Prediction
