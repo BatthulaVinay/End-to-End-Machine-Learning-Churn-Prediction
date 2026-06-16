@@ -1,5 +1,7 @@
 # Customer Churn Prediction System
 
+🚀 **Live Production Demo:** [Interact with the App on Hugging Face Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
+
 Built an end-to-end machine learning pipeline to predict customer churn and compare multiple classification approaches on an imbalanced dataset.
 
 The project focuses on:
