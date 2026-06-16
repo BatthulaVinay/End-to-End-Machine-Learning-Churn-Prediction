@@ -176,5 +176,20 @@ Accuracy alone is insufficient for imbalanced churn datasets.
 
 Business impact is better reflected through precision-recall metrics.
 
+## 🏆 Benchmark Summary
+
+| Rank | Model | Precision | Recall | ROC-AUC | F1 Score |
+|------|--------|---------:|---------:|---------:|---------:|
+| 🥇 | XGBoost | **0.752** | 0.784 | **0.901** | **0.768** |
+| 🥈 | Random Forest | 0.617 | **0.814** | 0.892 | 0.702 |
+| 🥉 | Decision Tree | 0.611 | 0.680 | 0.767 | 0.644 |
+| 4 | Logistic Regression + SMOTE | 0.250 | 0.907 | 0.811 | 0.392 |
+| 5 | Logistic Regression | 0.237 | **0.928** | 0.816 | 0.378 |
+
+**Selected Model:** XGBoost  
+**Selection Criterion:** Highest F1 Score and ROC-AUC with a strong balance between precision and recall.
+
+
+
 
 
