@@ -243,7 +243,7 @@ Business impact is better reflected through precision-recall metrics.
 | **Model Engine** | XGBoost, Random Forest, Scikit-Learn |
 | **Imbalance Handling** | SMOTE (Imbalanced-Learn) |
 | **Core Utilities** | Custom Logging & Production Exception Handlers |
-| **Web App Framework**| Flask / Streamlit |
+| **Web App Framework**| Flask / Streamlit,FastAPI |
 | **Containerization** | Docker, Docker-Compose |
 
 ---
