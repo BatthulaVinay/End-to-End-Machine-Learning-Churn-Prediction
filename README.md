@@ -87,13 +87,7 @@ pip install -r requirements.txt
 
 ## Usage
 
-Run the notebook:
-
-```bash
-jupyter notebook
-```
-
-Or execute the Python script:
+execute the Python script:
 
 ```bash
 python main.py
