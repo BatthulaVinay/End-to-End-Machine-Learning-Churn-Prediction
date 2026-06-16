@@ -197,6 +197,13 @@ Business impact is better reflected through precision-recall metrics.
 **Selected Model:** XGBoost  
 **Selection Criterion:** Highest F1 Score and ROC-AUC with a strong balance between precision and recall.
 
+## 📈 Key Results
+The optimization process yielded significant improvements over the initial baseline, demonstrating the effectiveness of hyperparameter tuning and model selection:
+
+* **Performance Lift:** Achieved an **F1-Score improvement of ~103%** (from **0.378** to **0.768**) by transitioning from a standard Logistic Regression baseline to a hyperparameter-tuned XGBoost model.
+* **Balanced Outcomes:** Successfully addressed class imbalance issues, improving precision from **0.237** to **0.752** while maintaining a robust recall of **78.4%**.
+* **Superior Stability:** The XGBoost model provides a more reliable and actionable churn prediction system, effectively reducing the false-alarm rate seen in earlier iterations.
+
 ## 📁 Project Structure
 
 ```text
