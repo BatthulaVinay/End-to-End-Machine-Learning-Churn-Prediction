@@ -16,8 +16,6 @@ Identify customers likely to churn while minimizing false predictions and maximi
 
 
 ````
-## Architecture
-
 ```mermaid
 flowchart TD
 
@@ -27,8 +25,6 @@ B --> C[Preprocessing]
 C --> C1[Missing Values]
 C --> C2[Encoding]
 C --> C3[Scaling]
-
-C --> D[Train/Test Split]
 
 D --> E[Model Training]
 
@@ -47,4 +43,3 @@ E5 --> F
 F --> G[Model Comparison]
 
 G --> H[Best Model Selection<br/>XGBoost]
-
