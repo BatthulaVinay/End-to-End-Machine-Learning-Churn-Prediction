@@ -45,6 +45,7 @@ F --> G[Model Comparison]
 G --> H[Best Model Selection<br/>XGBoost]
 
 ```
+
 ## Dataset
 
 Telecom customer churn dataset.
@@ -99,3 +100,5 @@ The objective was to maximize churn detection performance while maintaining a ba
 ### Conclusion
 
 The experiments demonstrate the importance of evaluating multiple models rather than relying solely on recall. While Logistic Regression captured most churn cases, XGBoost achieved the strongest overall performance and generalization capability, making it the preferred model for deployment.
+
+```
