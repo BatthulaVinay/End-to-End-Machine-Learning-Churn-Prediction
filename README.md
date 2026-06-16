@@ -1,16 +1,15 @@
 # Customer Churn Prediction System
 
-An end-to-end machine learning system for predicting customer churn.
+Built an end-to-end machine learning pipeline to predict customer churn and compare multiple classification approaches on an imbalanced dataset.
 
-The objective is to identify customers at high risk of leaving so businesses can take proactive retention actions.
+The project focuses on:
 
-This project focuses on:
+- Churn prediction
+- Class imbalance handling
+- Model comparison
+- Precision–Recall tradeoffs
+- Business-oriented evaluation metrics
 
-- Data preprocessing and feature engineering
-- Model comparison and experimentation
-- Classification performance optimization
-- Error analysis and failure investigation
-- Reproducible ML pipelines
+Goal:
 
----
-
+Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
