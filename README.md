@@ -117,3 +117,72 @@ Best overall model.
 - Highest F1 Score
 - Best precision-recall balance
 
+## Failure Analysis
+
+### False Positives
+
+Customers predicted to churn but remained active.
+
+Possible reasons:
+
+- Temporary reduction in usage
+- Seasonal behavior
+- Insufficient behavioral features
+
+### False Negatives
+
+Customers predicted to stay but churned.
+
+Possible reasons:
+
+- External factors not present in dataset
+- Competitor promotions
+- Customer satisfaction issues not captured
+
+### Class Imbalance Challenge
+
+Initial models favored the majority class.
+
+SMOTE was evaluated to mitigate imbalance but provided only marginal improvements.
+
+### Model Tradeoff
+
+Logistic Regression maximized recall but produced excessive false positives.
+
+XGBoost achieved a more balanced business outcome.
+
+## Best Model: XGBoost
+
+Performance:
+
+- Precision: 75.2%
+- Recall: 78.4%
+- ROC-AUC: 90.1%
+- F1 Score: 76.8%
+
+Confusion Matrix:
+
+True Negatives: 545
+False Positives: 25
+
+False Negatives: 21
+True Positives: 76
+
+## Evaluation Methodology
+
+Metrics Used:
+
+- Precision
+- Recall
+- F1 Score
+- ROC-AUC
+- PR-AUC
+
+Reason:
+
+Accuracy alone is insufficient for imbalanced churn datasets.
+
+Business impact is better reflected through precision-recall metrics.
+
+
+
