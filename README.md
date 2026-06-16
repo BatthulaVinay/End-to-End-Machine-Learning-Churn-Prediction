@@ -283,4 +283,5 @@ python app.py
 # Build and launch the containerized application
 docker-compose up --build
 ```
-
+## License
+This project is licensed under the terms of the LICENSE file included in this repository.
