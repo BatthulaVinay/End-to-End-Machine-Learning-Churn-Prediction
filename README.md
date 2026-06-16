@@ -14,6 +14,8 @@ Goal:
 
 Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
 
+# Architecture
+
 ```mermaid
 flowchart TD
 
