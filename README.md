@@ -14,189 +14,43 @@ Goal:
 
 Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
 
-## Model Development Pipeline
 
-```text
-Customer Dataset
-       │
-       ▼
-Data Validation
-       │
-       ▼
-Preprocessing
-(Missing Values,
-Encoding,
-Scaling)
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
- ├─ Logistic Regression
- ├─ Logistic Regression + SMOTE
- ├─ Decision Tree
- ├─ Random Forest
- └─ XGBoost
-       │
-       ▼
-Evaluation
-(Recall, Precision,
-F1, ROC-AUC, PR-AUC)
-       │
-       ▼
-Model Comparison
-       │
-       ▼
-Best Model Selection
-(XGBoost)
-```
-## Model Development Pipeline
+---
 
-```text
-Customer Dataset
-       │
-       ▼
-Data Validation
-       │
-       ▼
-Preprocessing
-(Missing Values,
-Encoding,
-Scaling)
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
- ├─ Logistic Regression
- ├─ Logistic Regression + SMOTE
- ├─ Decision Tree
- ├─ Random Forest
- └─ XGBoost
-       │
-       ▼
-Evaluation
-(Recall, Precision,
-F1, ROC-AUC, PR-AUC)
-       │
-       ▼
-Model Comparison
-       │
-       ▼
-Best Model Selection
-(XGBoost)
+### Option 3: Mermaid Diagram (Best for GitHub)
 
-```
-## Model Development Pipeline
+GitHub renders Mermaid diagrams automatically and recruiters love them.
 
-```text
-Customer Dataset
-       │
-       ▼
-Data Validation
-       │
-       ▼
-Preprocessing
-(Missing Values,
-Encoding,
-Scaling)
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
- ├─ Logistic Regression
- ├─ Logistic Regression + SMOTE
- ├─ Decision Tree
- ├─ Random Forest
- └─ XGBoost
-       │
-       ▼
-Evaluation
-(Recall, Precision,
-F1, ROC-AUC, PR-AUC)
-       │
-       ▼
-Model Comparison
-       │
-       ▼
-Best Model Selection
-(XGBoost)
+````markdown
+## Architecture
 
-````
-## Model Development Pipeline
+```mermaid
+flowchart TD
 
-```text
-Customer Dataset
-       │
-       ▼
-Data Validation
-       │
-       ▼
-Preprocessing
-(Missing Values,
-Encoding,
-Scaling)
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
- ├─ Logistic Regression
- ├─ Logistic Regression + SMOTE
- ├─ Decision Tree
- ├─ Random Forest
- └─ XGBoost
-       │
-       ▼
-Evaluation
-(Recall, Precision,
-F1, ROC-AUC, PR-AUC)
-       │
-       ▼
-Model Comparison
-       │
-       ▼
-Best Model Selection
-(XGBoost)## Model Development Pipeline
+A[Customer Dataset] --> B[Data Validation]
 
-```text
-Customer Dataset
-       │
-       ▼
-Data Validation
-       │
-       ▼
-Preprocessing
-(Missing Values,
-Encoding,
-Scaling)
-       │
-       ▼
-Train/Test Split
-       │
-       ▼
-Model Training
- ├─ Logistic Regression
- ├─ Logistic Regression + SMOTE
- ├─ Decision Tree
- ├─ Random Forest
- └─ XGBoost
-       │
-       ▼
-Evaluation
-(Recall, Precision,
-F1, ROC-AUC, PR-AUC)
-       │
-       ▼
-Model Comparison
-       │
-       ▼
-Best Model Selection
-(XGBoost)
+B --> C[Preprocessing]
+C --> C1[Missing Values]
+C --> C2[Encoding]
+C --> C3[Scaling]
 
-```
+C --> D[Train/Test Split]
+
+D --> E[Model Training]
+
+E --> E1[Logistic Regression]
+E --> E2[Logistic Regression + SMOTE]
+E --> E3[Decision Tree]
+E --> E4[Random Forest]
+E --> E5[XGBoost]
+
+E1 --> F[Evaluation]
+E2 --> F
+E3 --> F
+E4 --> F
+E5 --> F
+
+F --> G[Model Comparison]
+
+G --> H[Best Model Selection<br/>XGBoost]
+
