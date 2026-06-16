@@ -2,6 +2,10 @@
 
 🚀 **Live Production Demo:** [Interact with the App on Hugging Face Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 
+| Churn Prediction | No Churn Prediction |
+| :---: | :---: |
+| ![Churn](images/churn.png) | ![No Churn](images/images/No%20churn.png) |
+
 Built an end-to-end machine learning pipeline to predict customer churn and compare multiple classification approaches on an imbalanced dataset.
 
 The project focuses on:
