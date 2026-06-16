@@ -82,20 +82,38 @@ The objective was to maximize churn detection performance while maintaining a ba
   - Highest ROC-AUC (**0.901**)
   - Highest F1 Score (**0.768**)
   - Strong Recall (**0.784**)
+## Experimental Findings
 
-### Best Model
+### 1. Logistic Regression
 
-**XGBoost** was selected as the final model because it provided the best balance between identifying churned customers and minimizing false positives.
+Very high recall (92.8%) but extremely poor precision.
 
-| Metric | Score |
-|----------|---------:|
-| Precision | 0.752 |
-| Recall | 0.784 |
-| ROC-AUC | 0.901 |
-| F1 Score | 0.768 |
+Pros:
+- Rarely misses churners
 
-### Conclusion
+Cons:
+- Large number of false alarms
 
-The experiments demonstrate the importance of evaluating multiple models rather than relying solely on recall. While Logistic Regression captured most churn cases, XGBoost achieved the strongest overall performance and generalization capability, making it the preferred model for deployment.
+### 2. SMOTE
 
-```
+Improved precision slightly.
+
+However:
+- Minimal improvement overall
+- Did not significantly improve ROC-AUC
+
+### 3. Random Forest
+
+Major performance jump.
+
+- ROC-AUC increased to 0.892
+- F1 increased to 0.702
+
+### 4. XGBoost
+
+Best overall model.
+
+- Highest ROC-AUC
+- Highest F1 Score
+- Best precision-recall balance
+
