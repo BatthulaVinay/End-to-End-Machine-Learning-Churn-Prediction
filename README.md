@@ -15,13 +15,7 @@ Goal:
 Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
 
 
----
-
-### Option 3: Mermaid Diagram (Best for GitHub)
-
-GitHub renders Mermaid diagrams automatically and recruiters love them.
-
-````markdown
+````
 ## Architecture
 
 ```mermaid
