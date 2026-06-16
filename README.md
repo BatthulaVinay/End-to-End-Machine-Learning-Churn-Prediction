@@ -14,7 +14,6 @@ Goal:
 
 Identify customers likely to churn while minimizing false predictions and maximizing actionable business insights.
 
-
 ```mermaid
 flowchart TD
 
@@ -45,7 +44,6 @@ F --> G[Model Comparison]
 G --> H[Best Model Selection<br/>XGBoost]
 
 ```
-
 ## Dataset
 
 Telecom customer churn dataset.
@@ -59,7 +57,6 @@ Challenges:
 - Mixed numerical and categorical features
 - Business cost of false negatives
 
-```
 ## Experiments
 
 The objective was to maximize churn detection performance while maintaining a balance between precision and recall.
