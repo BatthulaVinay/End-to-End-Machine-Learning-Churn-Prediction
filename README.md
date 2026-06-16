@@ -59,7 +59,7 @@ Challenges:
 - Business cost of false negatives
 
 ````
-## Experiments 
+## Experiments (MOST IMPORTANT)
 
 > **Note:** These are the actual empirical results obtained during the model evaluation phase.
 
@@ -76,5 +76,3 @@ Challenges:
 1. **Why XGBoost Wins:** It achieves the highest **F1-Score (0.768)** and **ROC-AUC (0.901)**, proving it is the most robust model for balancing false positives and false negatives.
 2. **The Precision-Recall Trade-off:** While *Logistic Regression* captures the most churners (Recall: 0.928), its abysmal Precision (0.237) means it suffers from a massive rate of false alarms. 
 3. **Tree-Based Dominance:** Ensemble methods (Random Forest and XGBoost) significantly outperform linear baselines on this dataset.
-
-```
