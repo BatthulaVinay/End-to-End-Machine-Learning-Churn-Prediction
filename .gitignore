@@ -140,9 +140,14 @@ celerybeat.pid
 .venv
 env/
 venv/
+venv_churn/
 ENV/
 env.bak/
 venv.bak/
+
+# Binary artifacts and model files
+artifacts/
+notebook/*.pkl
 
 # Spyder project settings
 .spyderproject
