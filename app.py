@@ -1,7 +1,8 @@
 import streamlit as st
+import traceback
 from src.pipeline.predict_pipeline import PredictPipeline, CustomData
 
-st.set_page_config(page_title="Customer Churn Predictor", layout="centered")
+st.set_page_config(page_title="Churn Predictor", layout="centered")
 
 @st.cache_resource
 def get_predictor():
@@ -30,26 +31,22 @@ with st.form("churn_form"):
     submit = st.form_submit_button("Predict Churn")
 
 if submit:
-    data = CustomData(
-        account_length, total_day_minutes, total_eve_minutes, total_night_minutes,
-        total_intl_minutes, customer_service_calls, number_vmail_messages, 
-        total_day_calls, total_eve_calls, total_night_calls, total_intl_calls, 
-        international_plan, voice_mail_plan, area_code
-    )
-    
-    df = data.get_data_as_dataframe()
-    
     try:
+        data = CustomData(
+            account_length, total_day_minutes, total_eve_minutes, total_night_minutes,
+            total_intl_minutes, customer_service_calls, number_vmail_messages, 
+            total_day_calls, total_eve_calls, total_night_calls, total_intl_calls, 
+            international_plan, voice_mail_plan, area_code
+        )
+        df = data.get_data_as_dataframe()
+        
         predictions, probabilities = predictor.predict(df)
         explanation = predictor.explain(df, top_n=5)
         
-        if predictions[0] == 1:
-            st.error("🚨 Customer is likely to churn")
-        else:
-            st.success("✅ Customer is unlikely to churn")
-            
-        st.write(f"**Churn Probability:** {round(float(probabilities[0]), 4)}")
-        st.write("### Explanation")
+        st.write(f"Prediction: {'Churn' if predictions[0] == 1 else 'No Churn'}")
+        st.write(f"Probability: {round(float(probabilities[0]), 4)}")
         st.json(explanation)
+        
     except Exception as e:
-        st.error(f"Prediction failed: {e}")
+        st.error(f"Error: {str(e)}")
+        st.code(traceback.format_exc())

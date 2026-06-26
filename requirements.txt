@@ -9,3 +9,5 @@ streamlit
 requests
 scikit-learn
 xgboost
+shap
+joblib
