@@ -7,6 +7,7 @@ from src.logger import logging
 from src.exception import CustomException
 
 from src.utils import load_object
+from src.components.explainability import explain_instance
 
 
 class PredictPipeline:
@@ -49,6 +50,22 @@ class PredictPipeline:
         
         except Exception as e:
             logging.error("Error during prediction")
+            raise CustomException(e, sys)
+
+    def explain(self, features: pd.DataFrame, top_n: int = 10):
+        """
+        Generate a local explanation for a single example.
+        """
+        try:
+            logging.info("Loading preprocessor and model for explanation")
+
+            preprocessor = load_object(self.preprocessor_path)
+            model = load_object(self.model_path)
+
+            return explain_instance(model, preprocessor, features, top_n=top_n)
+
+        except Exception as e:
+            logging.error("Error during explanation generation")
             raise CustomException(e, sys)
 
 
