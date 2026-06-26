@@ -22,7 +22,7 @@ def _extract_feature_names_from_transformer(transformer: Any, columns: List[str]
                     expanded.extend([f"{name}_{cat}" for cat in cats])
                 return expanded
 
-        # If there is no OneHotEncoder inside this pipeline, preserve original names.
+        # For pipelines without an OneHotEncoder, preserve original names.
         return list(columns)
 
     if isinstance(transformer, OneHotEncoder):
@@ -32,13 +32,19 @@ def _extract_feature_names_from_transformer(transformer: Any, columns: List[str]
             expanded.extend([f"{name}_{cat}" for cat in cats])
         return expanded
 
+    # Fallback for transformers that do not support get_feature_names_out
     return list(columns)
 
 
 def get_feature_names(preprocessor: ColumnTransformer) -> List[str]:
     try:
         if hasattr(preprocessor, "get_feature_names_out"):
-            return list(preprocessor.get_feature_names_out())
+            try:
+                return list(preprocessor.get_feature_names_out())
+            except Exception:
+                logging.warning(
+                    "ColumnTransformer.get_feature_names_out() failed; using fallback feature name extraction"
+                )
 
         feature_names = []
         for name, transformer, columns in preprocessor.transformers_:
