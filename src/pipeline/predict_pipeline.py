@@ -37,20 +37,20 @@ class CustomData:
                  international_plan, voice_mail_plan, area_code):
         
         self.data = {
-            "account_length": [account_length],
-            "total_day_minutes": [total_day_minutes],
-            "total_eve_minutes": [total_eve_minutes],
-            "total_night_minutes": [total_night_minutes],
-            "total_intl_minutes": [total_intl_minutes],
-            "customer_service_calls": [customer_service_calls],
-            "number_vmail_messages": [number_vmail_messages],
-            "total_day_calls": [total_day_calls],
-            "total_eve_calls": [total_eve_calls],
-            "total_night_calls": [total_night_calls],
-            "total_intl_calls": [total_intl_calls],
-            "international_plan": [international_plan],
-            "voice_mail_plan": [voice_mail_plan],
-            "area_code": [area_code]
+            "Account length": [account_length],
+            "Total day minutes": [total_day_minutes],
+            "Total eve minutes": [total_eve_minutes],
+            "Total night minutes": [total_night_minutes],
+            "Total intl minutes": [total_intl_minutes],
+            "Customer service calls": [customer_service_calls],
+            "Number vmail messages": [number_vmail_messages],
+            "Total day calls": [total_day_calls],
+            "Total eve calls": [total_eve_calls],
+            "Total night calls": [total_night_calls],
+            "Total intl calls": [total_intl_calls],
+            "International plan": [str(international_plan).title()],
+            "Voice mail plan": [str(voice_mail_plan).title()],
+            "Area code": [area_code]
         }
 
     def get_data_as_dataframe(self):

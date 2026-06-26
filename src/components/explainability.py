@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 from sklearn.compose import ColumnTransformer
 from sklearn.inspection import permutation_importance
+from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder
 
 from src.exception import CustomException
@@ -12,18 +13,22 @@ from src.logger import logging
 
 
 def _extract_feature_names_from_transformer(transformer: Any, columns: List[str]) -> List[str]:
-    if hasattr(transformer, "named_steps"):
-        # Common pipeline wrappers
-        for step in transformer.named_steps.values():
-            if isinstance(step, OneHotEncoder):
-                categories = step.categories_
-                expanded = []
-                for name, cats in zip(columns, categories):
-                    expanded.extend([f"{name}_{cat}" for cat in cats])
-                return expanded
+    if isinstance(transformer, Pipeline):
+        try:
+            return list(transformer.get_feature_names_out(columns))
+        except Exception:
+            if len(transformer.steps) > 1:
+                try:
+                    return list(Pipeline(transformer.steps[:-1]).get_feature_names_out(columns))
+                except Exception:
+                    pass
+            transformer = transformer.steps[-1][1]
 
-        # For pipelines without an OneHotEncoder, preserve original names.
-        return list(columns)
+    if hasattr(transformer, "get_feature_names_out"):
+        try:
+            return list(transformer.get_feature_names_out(columns))
+        except Exception:
+            pass
 
     if isinstance(transformer, OneHotEncoder):
         categories = transformer.categories_
@@ -32,20 +37,11 @@ def _extract_feature_names_from_transformer(transformer: Any, columns: List[str]
             expanded.extend([f"{name}_{cat}" for cat in cats])
         return expanded
 
-    # Fallback for transformers that do not support get_feature_names_out
     return list(columns)
 
 
 def get_feature_names(preprocessor: ColumnTransformer) -> List[str]:
     try:
-        if hasattr(preprocessor, "get_feature_names_out"):
-            try:
-                return list(preprocessor.get_feature_names_out())
-            except Exception:
-                logging.warning(
-                    "ColumnTransformer.get_feature_names_out() failed; using fallback feature name extraction"
-                )
-
         feature_names = []
         for name, transformer, columns in preprocessor.transformers_:
             if name == "remainder":
