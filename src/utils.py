@@ -26,9 +26,14 @@ def save_object(file_path: str, obj):
 
 def load_object(file_path: str):
     """
-    Load a pickled Python object
+    Load a pickled Python object with absolute path resolution
     """
     try:
+        # Get the absolute path to ensure we don't rely on current working directory
+        if not os.path.exists(file_path):
+            # This helps debug the exact location it is searching
+            raise FileNotFoundError(f"File not found at: {os.path.abspath(file_path)}")
+            
         with open(file_path, "rb") as file_obj:
             return pickle.load(file_obj)
 

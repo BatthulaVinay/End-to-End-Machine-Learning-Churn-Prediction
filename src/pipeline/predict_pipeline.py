@@ -14,7 +14,9 @@ class PredictPipeline:
     def __init__(self):
         self.model_path = os.path.join("artifacts", "model.pkl")
         self.preprocessor_path = os.path.join("artifacts", "preprocessor.pkl")
-        
+        logging.info(f"Checking for file at: {os.path.abspath(self.preprocessor_path)}")
+        logging.info(f"Directory exists: {os.path.exists('artifacts')}")
+
 
     def predict(self, features: pd.DataFrame):
         """
