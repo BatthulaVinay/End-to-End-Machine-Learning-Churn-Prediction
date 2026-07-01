@@ -13,14 +13,11 @@ pinned: false
 <!-- Badges Section -->
 <p align="left">
   <a href="https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction">
-    <img src="https://img.shields.io/badge/Live_Demo-Link-brightgreen?style=for-the-badge&logo=appveyor" alt="Live Demo">
+    <img src="https://img.shields.io/badge/Live_Demo-Link-brightgreen?style=for-the-badge&logo=appveyor" alt="HuggingFace Space">
   </a>
   <a href="https://www.python.org/">
     <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" alt="Python">
   </a>
-  <a href="https://huggingface.co/spaces">
-  <img src="https://img.shields.io/badge/HuggingFace-Spaces-yellow?style=for-the-badge&logo=huggingface&logoColor=white" alt="Hugging Face">
-</a>
   <a href="https://www.docker.com/">
     <img src="https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white" alt="Docker">
   </a>
