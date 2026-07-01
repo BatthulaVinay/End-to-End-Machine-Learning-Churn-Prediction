@@ -8,7 +8,7 @@ sdk_version: 1.58.0
 app_file: app.py
 pinned: false
 ---
-# Customer Churn Prediction 🚀
+# 📊 Customer Churn Prediction 
 [View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 <!-- Badges Section -->
 <p align="left">
@@ -28,4 +28,4 @@ pinned: false
     <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
   </a>
 </p>
-
+An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
