@@ -51,5 +51,12 @@ Live Demo: Hosted and accessible via Hugging Face Spaces.
 | LR + SMOTE | 0.250 | 0.907 | 0.811 | 0.392 | 0.421 |
 | Standard LR | 0.237 | **0.928** | 0.816 | 0.378 | 0.421 |
 
+### 📈 Model Performance Improvement
+
+| Model | F1-Score | Improvement |
+| :--- | :---: | :--- |
+| **Standard LR** (Baseline) | 0.378 | - |
+| **XGBoost** (Best) | 0.768 | **+103.17%** |
+
 
 
