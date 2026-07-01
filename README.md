@@ -34,3 +34,12 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 [Try it live on HuggingFace Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 
 # ✨ Features
+Exploratory Data Analysis: Conducted comprehensive data profiling and visualization, including correlation heatmaps to identify key drivers of customer churn.
+
+Model Explainability: Integrated SHAP values to provide transparent, interpretable insights into model predictions, ensuring stakeholders understand the "why" behind each churn risk.
+
+Scalable API: Built a high-performance backend using FastAPI to serve real-time predictions, ensuring low latency and easy integration.
+
+Containerized Deployment: Fully Dockerized the application for consistent, reproducible environments across local development and production servers.
+
+Cloud Ready: Deployed the interactive application to Hugging Face Spaces, providing an accessible live demo for testing and model evaluation.
