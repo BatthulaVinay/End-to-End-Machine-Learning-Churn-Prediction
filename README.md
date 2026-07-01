@@ -12,7 +12,7 @@ pinned: false
 [View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 <!-- Badges Section -->
 <p align="left">
-  <a href="YOUR_LIVE_DEMO_URL">
+  <a href="https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction">
     <img src="https://img.shields.io/badge/Live_Demo-Link-brightgreen?style=for-the-badge&logo=appveyor" alt="Live Demo">
   </a>
   <a href="https://www.python.org/">
