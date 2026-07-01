@@ -31,4 +31,4 @@ pinned: false
 An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
 
 # 🔴 Live Demo
-[View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
+[Try it live on HuggingFace Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
