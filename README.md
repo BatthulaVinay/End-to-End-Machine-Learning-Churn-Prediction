@@ -32,3 +32,5 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 
 # 🔴 Live Demo
 [Try it live on HuggingFace Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
+
+# ✨ Features
