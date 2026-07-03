@@ -37,11 +37,10 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 
 ### Demo Screenshots
 
-<img src="images/image_1.png" width="300"> <img src="images/image__1.png" width="300">
-<img src="images/image_2.png" width="300"> <img src="images/image__2.png" width="300">
-<img src="images/image_3.png" width="300"> <img src="images/image__3.png" width="300">
-<img src="images/image_4.png" width="300"> <img src="images/image__4.png" width="300">
-
+<img src="images/image_1.png" width="300"> <img src="images/image1.png" width="300">
+<img src="images/image_2.png" width="300"> <img src="images/image2.png" width="300">
+<img src="images/image_3.png" width="300"> <img src="images/image3.png" width="300">
+<img src="images/image_4.png" width="300"> <img src="images/image4.png" width="300">
 ### ✨ Features
 
 - Data Analysis: Visualized churn drivers using correlation heatmaps.
