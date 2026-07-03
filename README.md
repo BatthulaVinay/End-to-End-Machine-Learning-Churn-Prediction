@@ -38,7 +38,7 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 <img src="images/image_1.png" width="400"> <img src="images/image1.png" width="400">
 <img src="images/image_2.png" width="400"> <img src="images/image2.png" width="400">
 <img src="images/image_3.png" width="400"> <img src="images/image3.png" width="400">
-<img src="images/image_4.png" width="375"> <img src="images/image4.png" width="425">
+<img src="images/image_4.png" width="375"> <img src="images/image4.png" width="430">
 
 ### ✨ Features
 
