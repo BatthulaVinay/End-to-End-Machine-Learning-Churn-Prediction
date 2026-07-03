@@ -30,10 +30,10 @@ pinned: false
 </p>
 An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
 
-# 🔴 Live Demo
+### 🔴 Live Demo
 [Try it live on HuggingFace Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 
-# Demo Screenshots
+### Demo Screenshots
 ![Image 1](images/image_1.png)
 
 ![Image 2](images/image_2.png)
@@ -42,7 +42,7 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 
 ![Image 4](images/image_4.png)
 
-# ✨ Features
+### ✨ Features
 
 - Data Analysis: Visualized churn drivers using correlation heatmaps.
 - Model Explainability: Used SHAP for transparent prediction insights.
@@ -66,6 +66,8 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 | :--- | :---: | :--- |
 | **Standard LR** (Baseline) | 0.378 | - |
 | **XGBoost** (Best) | 0.768 | **+103.17%** |
+
+### 🏗️ Architecture
 
 
 
