@@ -35,11 +35,11 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 
 # ✨ Features
 
-Data Analysis: Visualized churn drivers using correlation heatmaps.
-Model Explainability: Used SHAP for transparent prediction insights.
-FastAPI Backend: Served low-latency, real-time model predictions.
-Docker Ready: Fully containerized for consistent deployment.
-Live Demo: Hosted and accessible via Hugging Face Spaces.
+- Data Analysis: Visualized churn drivers using correlation heatmaps.
+- Model Explainability: Used SHAP for transparent prediction insights.
+- FastAPI Backend: Served low-latency, real-time model predictions.
+- Docker Ready: Fully containerized for consistent deployment.
+- Live Demo: Hosted and accessible via Hugging Face Spaces.
 
 ### 📊 Model Performance Comparison
 
