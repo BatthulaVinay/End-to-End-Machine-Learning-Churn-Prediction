@@ -31,6 +31,28 @@ Customer churn is one of the biggest challenges in the telecom industry.
 
 This project predicts customers who are likely to churn so businesses can proactively retain high-risk customers using targeted interventions.
 
+## 📑 Table of Contents
+
+- [🛠️ Tech Stack](#️-tech-stack)
+- [📸 Demo Screenshots](#-demo-screenshots)
+- [🚀 Key Engineering Features](#-key-engineering-features)
+- [⭐ Project Highlights](#-project-highlights)
+- [📂 Project Structure](#-project-structure)
+- [📊 Dataset Overview](#-dataset-overview)
+- [📊 Model Performance Comparison](#-model-performance-comparison)
+- [📈 Model Performance Improvement](#-model-performance-improvement)
+- [🏆 Why XGBoost?](#-why-xgboost)
+- [🏗️ System Architecture](#️-system-architecture)
+- [🔍 Model Explainability](#-model-explainability)
+- [🚀 Deployment Architecture](#-deployment-architecture)
+- [📡 API Reference](#-api-reference)
+- [⚙️ Installation](#️-installation)
+- [▶️ Running the Application](#️-running-the-application)
+- [🔮 Future Improvements](#-future-improvements)
+- [📚 Lessons Learned](#-lessons-learned)
+- [📄 License](#-license)
+- [👨‍💻 Author](#-author)
+
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
