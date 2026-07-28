@@ -400,3 +400,37 @@ http://localhost:8501
 4. Enter customer information.
 5. Click **Predict Churn**.
 6. View the prediction probability and explanation.
+
+## 🔮 Future Improvements
+
+- [ ] Implement **CI/CD pipelines** using GitHub Actions for automated testing and deployment.
+- [ ] Integrate **MLflow** for experiment tracking, model versioning, and reproducibility.
+- [ ] Add **Data Version Control (DVC)** for dataset and model artifact management.
+- [ ] Deploy the application on **AWS/GCP/Azure** with scalable cloud infrastructure.
+- [ ] Add **model monitoring** to track prediction performance and detect concept drift.
+- [ ] Implement **data validation** using Great Expectations to ensure input data quality.
+- [ ] Support **batch predictions** by accepting CSV file uploads.
+- [ ] Add **authentication and rate limiting** to secure the prediction API.
+- [ ] Improve API reliability with **unit tests** and **integration tests**.
+- [ ] Container orchestration using **Kubernetes** for high availability and scalability.
+
+## 📚 Lessons Learned
+
+Building this project provided valuable experience in developing and deploying an end-to-end machine learning application. Key takeaways include:
+
+- Model interpretability is essential for building trust in machine learning predictions.
+- Benchmarking multiple algorithms is crucial before selecting a production model.
+- Evaluation metrics such as **F1-Score**, **ROC-AUC**, and **PR-AUC** provide a more comprehensive assessment than accuracy alone.
+- Deploying a model requires more than training—it involves API development, containerization, and user interface integration.
+- Designing a modular project structure improves maintainability, scalability, and code reusability.
+
+## 📄 License
+
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
+
+## 👨‍💻 Author
+
+**Vinay Batthula**
+
+- GitHub: https://github.com/BatthulaVinay
+- Hugging Face: https://huggingface.co/BatthulaVinay
