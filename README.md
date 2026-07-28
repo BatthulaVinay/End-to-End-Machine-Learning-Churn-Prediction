@@ -18,6 +18,9 @@
   <a href="https://streamlit.io/">
     <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
   </a>
+  <a href="https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction">
+  <img src="https://img.shields.io/badge/Hugging%20Face-Spaces-FFD21E?style=for-the-badge&logo=huggingface&logoColor=black" alt="Hugging Face Spaces">
+</a>
 </p>
 
 Built an end-to-end machine learning system that predicts customer churn using XGBoost, served through FastAPI and deployed with Docker on Hugging Face Spaces. The system includes data preprocessing, feature engineering, SHAP-based model explainability, REST API inference, and an interactive Streamlit dashboard for real-time predictions.
@@ -45,13 +48,17 @@ Tech Stack
 <img src="images/image_3.png" width="400"> <img src="images/image3.png" width="400">
 <img src="images/image_4.png" width="350"> <img src="images/image4.png" width="440">
 
-## ✨ Features
+## 🚀 Key Engineering Features
 
-- Data Analysis: Visualized churn drivers using correlation heatmaps.
-- Model Explainability: Used SHAP for transparent prediction insights.
-- FastAPI Backend: Served low-latency, real-time model predictions.
-- Docker Ready: Fully containerized for consistent deployment.
-- Live Demo: Hosted and accessible via Hugging Face Spaces.
+- **End-to-End ML Pipeline:** Built a complete machine learning workflow, including data preprocessing, feature engineering, model training, evaluation, and inference.
+- **Model Benchmarking:** Compared multiple classification algorithms (Logistic Regression, Decision Tree, Random Forest, and XGBoost) to identify the best-performing model.
+- **Explainable AI:** Integrated SHAP to provide both global and local feature importance, improving model transparency and interpretability.
+- **REST API Serving:** Developed a FastAPI backend to deliver low-latency, real-time prediction through RESTful endpoints.
+- **Interactive Web Interface:** Created a Streamlit application that enables users to submit customer information and receive instant churn predictions.
+- **Containerized Deployment:** Dockerized the application to ensure consistent development, testing, and deployment across environments.
+- **Cloud Deployment:** Deployed the complete application on Hugging Face Spaces for public access and demonstration.
+- **Performance Evaluation:** Evaluated models using Precision, Recall, F1-Score, ROC-AUC, and PR-AUC to ensure robust model selection.
+- **Reproducible Workflow:** Structured the project with modular components, making it easy to maintain, extend, and reproduce.
 
 ## 📊 Model Performance Comparison
 
