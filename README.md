@@ -56,8 +56,9 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 ### 🏗️ Architecture Diagram
 
 ```mermaid
-graph LR
-    A[Customer Dataset] --> B{Data Pipeline}
+graph TD
+    A[Customer Dataset]
+        --> B{Data Pipeline}
 
     B --> C[EDA]
     B --> D[Data Cleaning]
@@ -67,24 +68,23 @@ graph LR
     D --> F
     E --> F
 
-    F --> G[XGBoost<br/>Best Model]
+    F --> G[XGBoost Best Model]
 
-    G --> H[FastAPI<br/>Inference API]
+    G --> H[FastAPI API]
 
-    H --> I[Streamlit UI]
+    H --> I[Streamlit Dashboard]
 
     I --> J[Prediction]
-    I --> K[Probability]
-    I --> L[SHAP Explanation]
+    I --> K[Probability Score]
+    I --> L[SHAP Explainability]
 
     J --> M[Business Decision]
     K --> M
     L --> M
 
-    style B fill:#ffb366
-    style G fill:#99ccff
+    style B fill:#F4B183
+    style G fill:#5DADE2
     style M fill:#16A085
 ```
-
 
 
