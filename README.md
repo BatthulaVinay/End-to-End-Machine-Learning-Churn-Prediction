@@ -68,6 +68,42 @@ Built an end-to-end machine learning system that predicts customer churn using X
 - 🐳 Containerized the application using **Docker** for consistent deployment across environments.
 - ☁️ Deployed the complete application on **Hugging Face Spaces** for public access.
 
+## 📂 Project Structure
+
+```text
+customer-churn-prediction/
+│
+├── artifacts/                 # Trained model and preprocessing artifacts
+│
+├── images/                    # Screenshots and project assets
+│
+├── notebook/                  # Jupyter notebooks for EDA and model development
+│
+├── src/                       # Core source code
+│   ├── components/            # Data ingestion, transformation, model training
+│   ├── pipeline/              # Training and prediction pipelines
+│   ├── exception.py           # Custom exception handling
+│   ├── logger.py              # Logging configuration
+│   └── utils.py               # Utility functions
+│
+├── app.py                     # Streamlit web application
+├── main.py                    # FastAPI REST API
+│
+├── Dockerfile                 # Docker image configuration
+├── docker-compose.yml         # Multi-container configuration
+│
+├── requirements.txt           # Project dependencies
+├── setup.py                   # Package configuration
+│
+├── .dockerignore              # Docker ignore rules
+├── .gitignore                 # Git ignore rules
+├── .gitattributes             # Git LFS configuration
+│
+├── LICENSE                    # MIT License
+└── README.md                  # Project documentation
+```
+
+
 ## 📊 Dataset Overview
 
 The project uses a **telecommunications customer churn dataset** to predict whether a customer is likely to discontinue the service.
