@@ -33,7 +33,6 @@ Built an end-to-end machine learning system that predicts customer churn using X
 | **Data Analysis** | Pandas, NumPy |
 | **Data Visualization** | Matplotlib, Seaborn |
 | **Machine Learning** | Scikit-learn, XGBoost |
-| **Model Explainability** | SHAP |
 | **Backend API** | FastAPI |
 | **Frontend** | Streamlit |
 | **Deployment** | Docker, Hugging Face Spaces |
