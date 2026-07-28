@@ -99,47 +99,6 @@ This project predicts customers who are likely to churn so businesses can proact
 
 ## 📂 Project Structure
 
-📊 Customer Dataset
-        │
-        ▼
-🔍 Exploratory Data Analysis (EDA)
-        │
-        ▼
-🧹 Data Cleaning & Preprocessing
-        │
-        ▼
-⚙️ Feature Engineering
-        │
-        ▼
-✂️ Train/Test Split
-        │
-        ▼
-🤖 Model Training
-        │
-        ▼
-📈 Model Evaluation & Benchmarking
-        │
-        ▼
-🏆 Best Model Selection (XGBoost)
-        │
-        ▼
-💾 Model Serialization
-        │
-        ▼
-🚀 FastAPI Backend
-        │
-        ▼
-🖥️ Streamlit Frontend
-        │
-        ▼
-👤 User Input
-        │
-        ▼
-🎯 Churn Prediction
-        │
-        ▼
-🔍 Feature Importance / Explainability
-
 ```text
 customer-churn-prediction/
 │
