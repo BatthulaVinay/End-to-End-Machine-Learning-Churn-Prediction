@@ -211,4 +211,44 @@ Examples of important churn indicators include:
 - Account length
 - Voice mail plan
 
+## 🚀 Deployment Architecture
+
+The application is deployed as an end-to-end machine learning system on **Hugging Face Spaces**, enabling users to submit customer information and receive real-time churn predictions through an interactive web interface.
+
+### Deployment Flow
+
+```text
+User
+   │
+   ▼
+Streamlit Frontend
+   │
+   ▼
+FastAPI Backend
+   │
+   ▼
+Preprocessing Pipeline
+   │
+   ▼
+XGBoost Model
+   │
+   ▼
+Prediction + Confidence Score
+   │
+   ▼
+Display Results to User
+```
+
+### Deployment Components
+
+| Component | Technology |
+|-----------|------------|
+| **Frontend** | Streamlit |
+| **Backend API** | FastAPI |
+| **ML Model** | XGBoost |
+| **Containerization** | Docker |
+| **Hosting** | Hugging Face Spaces |
+
+🔗 **Live Demo:** https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction
+
 
