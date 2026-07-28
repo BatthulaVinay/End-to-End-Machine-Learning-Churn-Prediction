@@ -65,7 +65,9 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 | **Standard LR** (Baseline) | 0.378 | - |
 | **XGBoost** (Best) | 0.768 | **+103.17%** |
 
-### 🏗️ Architecture
+### 🏗️ Architecture Diagram
+
+
 
 
 
