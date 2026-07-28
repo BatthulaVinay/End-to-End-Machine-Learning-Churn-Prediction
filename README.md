@@ -329,4 +329,74 @@ Predicts whether a customer is likely to churn based on account usage and custom
 | `churn_prediction` | Predicted class (`0 = No Churn`, `1 = Churn`) |
 | `churn_probability` | Probability of customer churn |
 | `label` | Human-readable prediction (`Yes` or `No`) |
-| `explanation` | SHAP-based feature importance for the prediction |
+| `explanation` | feature importance for the prediction |
+
+## ⚙️ Installation
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/BatthulaVinay/customer-churn-prediction.git
+cd customer-churn-prediction
+```
+
+### 2. Create a Virtual Environment (Recommended)
+
+**Windows**
+
+```bash
+python -m venv venv
+venv\Scripts\activate
+```
+
+**Linux/macOS**
+
+```bash
+python3 -m venv venv
+source venv/bin/activate
+```
+
+### 3. Install Dependencies
+
+```bash
+pip install -r requirements.txt
+```
+
+### 4. Run the FastAPI Server
+
+```bash
+uvicorn app:app --reload
+```
+
+The API will be available at:
+
+```
+http://localhost:8000
+```
+
+Interactive API documentation:
+
+```
+http://localhost:8000/docs
+```
+
+### 5. Run the Streamlit Application
+
+```bash
+streamlit run app.py
+```
+
+The web application will be available at:
+
+```
+http://localhost:8501
+```
+
+## ▶️ Running the Application
+
+1. Start the FastAPI server.
+2. Launch the Streamlit application.
+3. Open the Streamlit URL in your browser.
+4. Enter customer information.
+5. Click **Predict Churn**.
+6. View the prediction probability and explanation.
