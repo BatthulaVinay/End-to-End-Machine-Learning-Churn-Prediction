@@ -88,7 +88,19 @@ Built an end-to-end machine learning system that predicts customer churn using X
 | **Standard LR** (Baseline) | 0.378 | - |
 | **XGBoost** (Best) | 0.768 | **+103.17%** |
 
-### 🏗️ System Architecture
+## Why XGBoost?
+
+- Highest ROC-AUC
+
+- Best Precision-Recall balance
+
+- Highest F1 Score
+
+- Better handling of nonlinear relationships
+
+- Reduced overfitting through boosting
+
+## 🏗️ System Architecture
 
 ```mermaid
 graph TD
