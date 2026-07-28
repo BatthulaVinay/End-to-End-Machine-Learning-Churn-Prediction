@@ -19,6 +19,7 @@
     <img src="https://img.shields.io/badge/Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit">
   </a>
 </p>
+
 An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
 
 ## Demo Screenshots
