@@ -76,44 +76,6 @@ This project predicts customers who are likely to churn so businesses can proact
 
 ## 📂 Project Structure
 
-Dataset
-
-↓
-
-EDA
-
-↓
-
-Cleaning
-
-↓
-
-Feature Engineering
-
-↓
-
-Train/Test Split
-
-↓
-
-Model Benchmarking
-
-↓
-
-Model Selection
-
-↓
-
-Deployment
-
-↓
-
-Prediction
-
-↓
-
-Explainability
-
 ```text
 customer-churn-prediction/
 │
@@ -202,15 +164,7 @@ The objective is to predict whether a customer will **churn** (leave the telecom
 
 ## 🏆 Why XGBoost?
 
-- Highest ROC-AUC
-
-- Best Precision-Recall balance
-
-- Highest F1 Score
-
-- Better handling of nonlinear relationships
-
-- Reduced overfitting through boosting
+XGBoost was selected because it consistently achieved the highest F1-Score (0.768) and ROC-AUC (0.901) while maintaining a strong balance between precision and recall. Compared with Logistic Regression and Random Forest, it generalized better on unseen data and captured nonlinear relationships more effectively.
 
 ## 🏗️ System Architecture
 
