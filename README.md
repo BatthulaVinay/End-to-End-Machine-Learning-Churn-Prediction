@@ -1,4 +1,4 @@
-### 📊 Customer Churn Prediction 
+## 📊 Customer Churn Prediction 
 
 [View Live Hugging Space](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 <!-- Badges Section -->
