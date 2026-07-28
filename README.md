@@ -23,7 +23,7 @@
 </a>
 </p>
 
-Built an end-to-end machine learning system that predicts customer churn using XGBoost, served through FastAPI and deployed with Docker on Hugging Face Spaces. The system includes data preprocessing, feature engineering, SHAP-based model explainability, REST API inference, and an interactive Streamlit dashboard for real-time predictions.
+Built an end-to-end machine learning system that predicts customer churn using XGBoost, served through FastAPI and deployed with Docker on Hugging Face Spaces. The system includes data preprocessing, feature engineering, model explainability, REST API inference, and an interactive Streamlit dashboard for real-time predictions.
 
 ## 🎯 Problem Statement
 
@@ -458,6 +458,17 @@ Building this project provided valuable experience in developing and deploying a
 - Deploying a model requires more than training—it involves API development, containerization, and user interface integration.
 - Designing a modular project structure improves maintainability, scalability, and code reusability.
 
+## 🛠️ Engineering Challenges
+
+During the development of this project, several engineering challenges were encountered and addressed:
+
+- **Class Imbalance:** Evaluated multiple models and metrics beyond accuracy to effectively handle the imbalanced churn dataset.
+- **Model Selection:** Compared Logistic Regression, Decision Tree, Random Forest, and XGBoost to identify the best-performing model.
+- **Prediction Pipeline:** Built a reusable prediction pipeline to ensure consistent preprocessing during both training and inference.
+- **API Integration:** Integrated the machine learning model with FastAPI to provide real-time predictions through REST endpoints.
+- **End-to-End Deployment:** Containerized the application using Docker and deployed it on Hugging Face Spaces for reproducible execution.
+- **Model Explainability:** Incorporated feature importance explanations to improve prediction transparency and user trust.
+  
 ## 📄 License
 
 This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for more information.
