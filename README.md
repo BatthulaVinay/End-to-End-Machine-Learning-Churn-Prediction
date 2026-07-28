@@ -69,8 +69,40 @@ Built an end-to-end machine learning system that predicts customer churn using X
 - 🐳 Containerized the application using **Docker** for consistent deployment across environments.
 - ☁️ Deployed the complete application on **Hugging Face Spaces** for public access.
 
-## Dataset Overview
+## 📊 Dataset Overview
 
+The project uses a **telecommunications customer churn dataset** to predict whether a customer is likely to discontinue the service.
+
+| Attribute | Details |
+|-----------|---------|
+| **Domain** | Telecommunications |
+| **Total Records** | 3,333 customers |
+| **Total Features** | 19 input features + 1 target column |
+| **Target Variable** | `Churn` (Binary Classification: True / False) |
+| **Dataset Type** | Structured Tabular Data |
+
+### Key Features
+
+The dataset contains customer demographics, subscription details, service usage, and customer support interactions, including:
+
+- State
+- Account Length
+- Area Code
+- International Plan
+- Voice Mail Plan
+- Number of Voice Mail Messages
+- Total Day Minutes, Calls, and Charges
+- Total Evening Minutes, Calls, and Charges
+- Total Night Minutes, Calls, and Charges
+- Total International Minutes, Calls, and Charges
+- Customer Service Calls
+
+### Prediction Target
+
+The objective is to predict whether a customer will **churn** (leave the telecom service) based on historical usage patterns and account information.
+
+- **False** → Customer is retained
+- **True** → Customer is likely to churn
 ## 📊 Model Performance Comparison
 
 | Model | Precision | Recall | ROC-AUC | F1-Score | PR-AUC |
