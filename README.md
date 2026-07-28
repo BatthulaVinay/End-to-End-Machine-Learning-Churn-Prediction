@@ -8,7 +8,9 @@ sdk_version: 1.58.0
 app_file: app.py
 pinned: false
 ---
+
 ### 📊 Customer Churn Prediction 
+
 [View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 <!-- Badges Section -->
 <p align="left">
@@ -95,7 +97,7 @@ graph LR
 
     style B fill:#ffb366
     style G fill:#99ccff
-    style M fill:#99ff99
+    style M fill:#16A085
 ```
 
 
