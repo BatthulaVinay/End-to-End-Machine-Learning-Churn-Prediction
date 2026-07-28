@@ -58,6 +58,17 @@ Built an end-to-end machine learning system that predicts customer churn using X
 - **Performance Evaluation:** Evaluated models using Precision, Recall, F1-Score, ROC-AUC, and PR-AUC to ensure robust model selection.
 - **Reproducible Workflow:** Structured the project with modular components, making it easy to maintain, extend, and reproduce.
 
+## ⭐ Project Highlights
+
+- 🚀 Developed an end-to-end customer churn prediction system using **XGBoost**, achieving a **ROC-AUC of 0.901**.
+- 📊 Benchmarked **five classification models** to identify the best-performing solution.
+- 📈 Improved the **F1-Score by 103.17%** compared to the baseline Logistic Regression model.
+- 🔍 Integrated **SHAP Explainability** to provide transparent and interpretable predictions.
+- ⚡ Built a **FastAPI REST API** for real-time inference with low-latency responses.
+- 🖥️ Developed an interactive **Streamlit** web application for user-friendly predictions.
+- 🐳 Containerized the application using **Docker** for consistent deployment across environments.
+- ☁️ Deployed the complete application on **Hugging Face Spaces** for public access.
+  
 ## 📊 Model Performance Comparison
 
 | Model | Precision | Recall | ROC-AUC | F1-Score | PR-AUC |
