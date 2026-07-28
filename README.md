@@ -251,4 +251,82 @@ Display Results to User
 
 🔗 **Live Demo:** https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction
 
+## 📡 API Reference
 
+The project exposes a REST API using **FastAPI** for real-time customer churn prediction.
+
+### Base URL
+
+```
+http://localhost:8000
+```
+
+---
+
+### Health Check
+
+**GET /**
+
+Checks whether the API is running.
+
+#### Response
+
+```json
+{
+  "status": "OK",
+  "message": "Customer Churn API is running"
+}
+```
+
+---
+
+### Predict Customer Churn
+
+**POST /predict**
+
+Predicts whether a customer is likely to churn based on account usage and customer information.
+
+#### Request Body
+
+```json
+{
+  "account_length": 100,
+  "total_day_minutes": 175.0,
+  "total_eve_minutes": 180.0,
+  "total_night_minutes": 200.0,
+  "total_intl_minutes": 10.0,
+  "customer_service_calls": 1,
+  "number_vmail_messages": 0,
+  "total_day_calls": 100,
+  "total_eve_calls": 100,
+  "total_night_calls": 100,
+  "total_intl_calls": 5,
+  "international_plan": "no",
+  "voice_mail_plan": "yes",
+  "area_code": 415
+}
+```
+
+#### Response
+
+```json
+{
+  "churn_prediction": 0,
+  "churn_probability": 0.0831,
+  "label": "No",
+  "explanation": {
+    "...": "Top SHAP feature contributions"
+  }
+}
+```
+
+---
+
+### Response Fields
+
+| Field | Description |
+|--------|-------------|
+| `churn_prediction` | Predicted class (`0 = No Churn`, `1 = Churn`) |
+| `churn_probability` | Probability of customer churn |
+| `label` | Human-readable prediction (`Yes` or `No`) |
+| `explanation` | SHAP-based feature importance for the prediction |
