@@ -50,6 +50,7 @@ This project predicts customers who are likely to churn so businesses can proact
 - [▶️ Running the Application](#️-running-the-application)
 - [🔮 Future Improvements](#-future-improvements)
 - [📚 Lessons Learned](#-lessons-learned)
+- [🛠️ Engineering Challenges](#-engineering-challenges)
 - [📄 License](#-license)
 - [👨‍💻 Author](#-author)
 
@@ -97,6 +98,47 @@ This project predicts customers who are likely to churn so businesses can proact
 - ☁️ Deployed the complete application on **Hugging Face Spaces** for public access.
 
 ## 📂 Project Structure
+
+📊 Customer Dataset
+        │
+        ▼
+🔍 Exploratory Data Analysis (EDA)
+        │
+        ▼
+🧹 Data Cleaning & Preprocessing
+        │
+        ▼
+⚙️ Feature Engineering
+        │
+        ▼
+✂️ Train/Test Split
+        │
+        ▼
+🤖 Model Training
+        │
+        ▼
+📈 Model Evaluation & Benchmarking
+        │
+        ▼
+🏆 Best Model Selection (XGBoost)
+        │
+        ▼
+💾 Model Serialization
+        │
+        ▼
+🚀 FastAPI Backend
+        │
+        ▼
+🖥️ Streamlit Frontend
+        │
+        ▼
+👤 User Input
+        │
+        ▼
+🎯 Churn Prediction
+        │
+        ▼
+🔍 Feature Importance / Explainability
 
 ```text
 customer-churn-prediction/
