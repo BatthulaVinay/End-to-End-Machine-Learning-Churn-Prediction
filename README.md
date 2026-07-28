@@ -22,6 +22,22 @@
 
 Built an end-to-end machine learning system that predicts customer churn using XGBoost, served through FastAPI and deployed with Docker on Hugging Face Spaces. The system includes data preprocessing, feature engineering, SHAP-based model explainability, REST API inference, and an interactive Streamlit dashboard for real-time predictions.
 
+## 🛠️ Tech Stack
+
+Tech Stack
+
+• Python
+• Pandas
+• NumPy
+• Scikit-learn
+• XGBoost
+• SHAP
+• FastAPI
+• Streamlit
+• Docker
+• Hugging Face Spaces
+• Git
+
 ## Demo Screenshots
 
 <img src="images/image_1.png" width="400"> <img src="images/image1.png" width="400">
