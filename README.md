@@ -25,6 +25,12 @@
 
 Built an end-to-end machine learning system that predicts customer churn using XGBoost, served through FastAPI and deployed with Docker on Hugging Face Spaces. The system includes data preprocessing, feature engineering, SHAP-based model explainability, REST API inference, and an interactive Streamlit dashboard for real-time predictions.
 
+## 🎯 Problem Statement
+
+Customer churn is one of the biggest challenges in the telecom industry.
+
+This project predicts customers who are likely to churn so businesses can proactively retain high-risk customers using targeted interventions.
+
 ## 🛠️ Tech Stack
 
 | Category | Technologies |
@@ -69,6 +75,44 @@ Built an end-to-end machine learning system that predicts customer churn using X
 - ☁️ Deployed the complete application on **Hugging Face Spaces** for public access.
 
 ## 📂 Project Structure
+
+Dataset
+
+↓
+
+EDA
+
+↓
+
+Cleaning
+
+↓
+
+Feature Engineering
+
+↓
+
+Train/Test Split
+
+↓
+
+Model Benchmarking
+
+↓
+
+Model Selection
+
+↓
+
+Deployment
+
+↓
+
+Prediction
+
+↓
+
+Explainability
 
 ```text
 customer-churn-prediction/
