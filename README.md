@@ -103,6 +103,7 @@ The objective is to predict whether a customer will **churn** (leave the telecom
 
 - **False** → Customer is retained
 - **True** → Customer is likely to churn
+  
 ## 📊 Model Performance Comparison
 
 | Model | Precision | Recall | ROC-AUC | F1-Score | PR-AUC |
@@ -177,6 +178,38 @@ graph TD
     style S fill:#16A085
 ```
 
-🔍 Model Explainability (SHAP)
+## 🔍 Model Explainability
+
+The system includes built-in explainability methods to improve model transparency and support business decision-making.
+
+### Local Explanations
+
+For individual predictions, the system identifies the most influential features contributing to churn predictions.
+
+Depending on the model type:
+
+- **Linear Models:** Uses feature coefficients to calculate contributions.
+- **Tree-Based Models:** Uses feature importance scores.
+- **Top Feature Ranking:** Displays the most impactful features for each prediction.
+
+### Global Explanations
+
+The project uses **Permutation Importance** to measure the impact of each feature on overall model performance.
+
+This approach:
+
+- Measures feature importance based on performance degradation.
+- Is model-agnostic and works across different algorithms.
+- Helps identify the strongest drivers of customer churn.
+
+### Key Business Insights
+
+Examples of important churn indicators include:
+
+- Customer service calls
+- International plan usage
+- Total day minutes
+- Account length
+- Voice mail plan
 
 
