@@ -26,17 +26,17 @@ Built an end-to-end machine learning system that predicts customer churn using X
 
 Tech Stack
 
-• Python
-• Pandas
-• NumPy
-• Scikit-learn
-• XGBoost
-• SHAP
-• FastAPI
-• Streamlit
-• Docker
-• Hugging Face Spaces
-• Git
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+- SHAP
+- FastAPI
+- Streamlit
+- Docker
+- Hugging Face Spaces
+- Git
 
 ## Demo Screenshots
 
