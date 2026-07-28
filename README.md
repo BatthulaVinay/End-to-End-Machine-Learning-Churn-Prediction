@@ -1,14 +1,3 @@
----
-title: Customer Churn Prediction
-emoji: 📊
-colorFrom: blue
-colorTo: indigo
-sdk: streamlit
-sdk_version: 1.58.0
-app_file: app.py
-pinned: false
----
-
 ### 📊 Customer Churn Prediction 
 
 [View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
@@ -31,9 +20,6 @@ pinned: false
   </a>
 </p>
 An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
-
-### 🔴 Live Demo
-[Try it live on HuggingFace Spaces](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 
 ### Demo Screenshots
 
