@@ -21,14 +21,14 @@
 </p>
 An end-to-end machine learning system designed to predict customer churn, enabling businesses to take proactive retention measures. This project utilizes classification models to analyze customer behavior patterns and provides actionable insights.
 
-### Demo Screenshots
+## Demo Screenshots
 
 <img src="images/image_1.png" width="400"> <img src="images/image1.png" width="400">
 <img src="images/image_2.png" width="400"> <img src="images/image2.png" width="400">
 <img src="images/image_3.png" width="400"> <img src="images/image3.png" width="400">
 <img src="images/image_4.png" width="350"> <img src="images/image4.png" width="440">
 
-### ✨ Features
+## ✨ Features
 
 - Data Analysis: Visualized churn drivers using correlation heatmaps.
 - Model Explainability: Used SHAP for transparent prediction insights.
@@ -36,7 +36,7 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 - Docker Ready: Fully containerized for consistent deployment.
 - Live Demo: Hosted and accessible via Hugging Face Spaces.
 
-### 📊 Model Performance Comparison
+## 📊 Model Performance Comparison
 
 | Model | Precision | Recall | ROC-AUC | F1-Score | PR-AUC |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -46,14 +46,14 @@ An end-to-end machine learning system designed to predict customer churn, enabli
 | LR + SMOTE | 0.250 | 0.907 | 0.811 | 0.392 | 0.421 |
 | Standard LR | 0.237 | **0.928** | 0.816 | 0.378 | 0.421 |
 
-### 📈 Model Performance Improvement
+## 📈 Model Performance Improvement
 
 | Model | F1-Score | Improvement |
 | :--- | :---: | :--- |
 | **Standard LR** (Baseline) | 0.378 | - |
 | **XGBoost** (Best) | 0.768 | **+103.17%** |
 
-### 🏗️ Architecture Diagram
+## 🏗️ Architecture Diagram
 
 ```mermaid
 graph TD
