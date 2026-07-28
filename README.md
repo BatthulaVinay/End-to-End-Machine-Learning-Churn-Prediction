@@ -120,7 +120,7 @@ The objective is to predict whether a customer will **churn** (leave the telecom
 | **Standard LR** (Baseline) | 0.378 | - |
 | **XGBoost** (Best) | 0.768 | **+103.17%** |
 
-## Why XGBoost?
+## 🏆 Why XGBoost?
 
 - Highest ROC-AUC
 
@@ -176,4 +176,7 @@ graph TD
     style L fill:#5DADE2
     style S fill:#16A085
 ```
+
+🔍 Model Explainability (SHAP)
+
 
