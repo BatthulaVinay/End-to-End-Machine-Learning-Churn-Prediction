@@ -1,6 +1,6 @@
 ### 📊 Customer Churn Prediction 
 
-[View Live App](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
+[View Live Hugging Space](https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction)
 <!-- Badges Section -->
 <p align="left">
   <a href="https://huggingface.co/spaces/BatthulaVinay/customer-churn-prediction">
