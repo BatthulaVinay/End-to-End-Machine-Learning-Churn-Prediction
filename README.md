@@ -244,7 +244,7 @@ graph TD
 
     P --> Q[Prediction]
 
-    Q --> R[SHAP Explainability]
+    Q --> R[Explainability]
 
     R --> S[Business Decision]
 
