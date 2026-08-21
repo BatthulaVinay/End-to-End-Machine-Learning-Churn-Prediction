@@ -110,7 +110,6 @@ This project predicts customers who are likely to churn so businesses can proact
 - 🚀 Developed an end-to-end customer churn prediction system using **XGBoost**, achieving a **ROC-AUC of 0.901**.
 - 📊 Benchmarked **five classification models** to identify the best-performing solution.
 - 📈 Improved the **F1-Score by 103.17%** compared to the baseline Logistic Regression model.
-- 🔍 Integrated **SHAP Explainability** to provide transparent and interpretable predictions.
 - ⚡ Built a **FastAPI REST API** for real-time inference with low-latency responses.
 - 🖥️ Developed an interactive **Streamlit** web application for user-friendly predictions.
 - 🐳 Containerized the application using **Docker** for consistent deployment across environments.
