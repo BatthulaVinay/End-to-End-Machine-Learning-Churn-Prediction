@@ -494,7 +494,6 @@ http://localhost:8501
 
 Building this project provided valuable experience in developing and deploying an end-to-end machine learning application. Key takeaways include:
 
-- Model interpretability is essential for building trust in machine learning predictions.
 - Benchmarking multiple algorithms is crucial before selecting a production model.
 - Evaluation metrics such as **F1-Score**, **ROC-AUC**, and **PR-AUC** provide a more comprehensive assessment than accuracy alone.
 - Deploying a model requires more than training—it involves API development, containerization, and user interface integration.
